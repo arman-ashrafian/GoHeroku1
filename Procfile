@@ -1,1 +1,1 @@
-web: goheroku1
+web: fileserver
