@@ -1,3 +1,7 @@
-html {
-    background-color: teal;
+body {
+    background-color: #cdd1d1;
+}
+
+#title {
+    text-align: center;
 }
