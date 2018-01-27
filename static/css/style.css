@@ -1,7 +1,6 @@
+html,
 body {
-    background-color: #cdd1d1;
+    background-color: grey;
+    margin-top: 10px;
 }
 
-#title {
-    text-align: center;
-}
