@@ -34,4 +34,4 @@
   unused-packages = true
 
 [metadata.heroku]
-  root-package = "github.com/heroku/fixture"
+  root-package = "github.com/armanashrafian/goheroku1"
