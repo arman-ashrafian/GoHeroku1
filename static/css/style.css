@@ -35,5 +35,6 @@ html {
 
 #github_logo {
     height: 40px;
-    width: 40px;
+    width: 100px;
+    background: #767676
 }
