@@ -1,6 +1,39 @@
-html,
-body {
-    background-color: grey;
-    margin-top: 10px;
+html {
+    background: black;
+    font-family: "Roboto";
+    color: #66bb6a  ;
+  }
+  
+#particles-js {
+    background-color: black;
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index:-100;
+}
+  
+#overlay {
+    position: relative;
 }
 
+#blog_preview {
+    color: #66bb6a  ;
+}
+
+#my_name {
+    color: #1e88e5;
+    font-weight: bolder;
+    font-size: 30pt;
+}
+
+#nav_list {
+    color: #1e88e5  ;
+    font-size: 15pt;
+}
+
+#github_logo {
+    height: 40px;
+    width: 40px;
+}

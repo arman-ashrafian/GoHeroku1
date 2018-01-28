@@ -3,33 +3,60 @@
 
 <head>
     <title>Arman Ashrafian</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
     <!-- Materialize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <!-- CSS -->
-    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="/static/css/style.css">
 </head>
 
 <body>
-    <!-- Page Layout here -->
-    <div class="row">
 
-        <div class="col s3">
-                <h4>Arman Ashrafian</h4>
-        </div>
-
-        <div class="col s9 left-align">
-                {{ template "content" }}
-        </div>
-
+    <div id="particles-js">
+        <!-- PARTICLES -->
     </div>
 
+    <!-- Home template setup -->
+    <div class="overlay container">
+        <div class="row">
+            <!-- NAV BAR -->
+            <div class="col s12 m4 nav-wrapper">
+                <a href="/" id="my_name">
+                    <h4>Arman Ashrafian</h4>
+                </a>
+                <p>I like computers</p>
+
+                <a href="https://github.com/arman-ashrafian">
+                <img id="github_logo" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png">
+                </a>
+
+                <ul id="nav_list" class="left-align">
+                    <li>Projects</li>
+                </ul>
+            </div>
+            <!-- END NAVBAR -->
+
+            <div class="col s12 m8">
+                {{ template "content" }}
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- -------- IMPORT JS -------- -->
+    <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-    <!-- Compiled and minified JavaScript -->
+    <!-- Materialize JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <!-- Particle JS -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <!-- My JS -->
-    <script src="../static/js/index.js"></script>
+    <script src="/static/js/index.js"></script>
+    <!-- -------- Setup Done -------- -->
 </body>
 
 </html>

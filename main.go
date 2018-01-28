@@ -51,9 +51,15 @@ func signinHandler(w http.ResponseWriter, r *http.Request) {
 
 func blogHandler(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
-	t, _ := template.ParseFiles(
+	t, err := template.ParseFiles(
 		"templates/base.html",
-		"templates/"+vars["blogid"]+".html",
+		"templates/blogs/"+vars["blogid"]+".html",
 	)
+
+	if err != nil {
+		// go home
+		http.Redirect(w, r, "/", 301)
+		return
+	}
 	t.ExecuteTemplate(w, "base", "")
 }
