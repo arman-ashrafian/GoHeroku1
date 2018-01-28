@@ -26,7 +26,6 @@ func main() {
 
 	// routes
 	r.HandleFunc("/", homeHandler)
-	r.HandleFunc("/signin", signinHandler)
 	r.HandleFunc("/blog/{blogid}", blogHandler)
 
 	log.Fatal(http.ListenAndServe(":"+port, r))
@@ -37,14 +36,6 @@ func homeHandler(w http.ResponseWriter, r *http.Request) {
 	t, _ := template.ParseFiles(
 		"templates/base.html",
 		"templates/home.html",
-	)
-	t.ExecuteTemplate(w, "base", "")
-}
-
-func signinHandler(w http.ResponseWriter, r *http.Request) {
-	t, _ := template.ParseFiles(
-		"templates/base.html",
-		"templates/sign_in.html",
 	)
 	t.ExecuteTemplate(w, "base", "")
 }
