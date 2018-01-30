@@ -52,7 +52,7 @@ func blogHandler(w http.ResponseWriter, r *http.Request) {
 
 	if err != nil {
 		// go home
-		http.Redirect(w, r, "/", 301)
+		http.Redirect(w, r, "/", http.StatusNoContent)
 		return
 	}
 
